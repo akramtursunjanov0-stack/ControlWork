@@ -1,3 +1,4 @@
+#1 задание
 class Person:
     def __init__(self):
         self.__age = 0
@@ -16,9 +17,11 @@ p = Person()
 p.set_age(25)
 print(p.get_age())  # 25
 
-# p.set_age(-5)  #oшибка!!!
+p.set_age(-5)  #oшибка!!!
 
 
+
+#2 задание
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -44,7 +47,7 @@ cat = Cat("Kitty")
 print(dog.name, dog.speak())
 print(cat.name, cat.speak())
 
-
+#3 задание
 class Vehicle:
     def move(self):
         return "Vehicle is moving"
@@ -73,7 +76,7 @@ print(move(bicycle))   # Bicycle is pedaling
 
 
 
-
+#4 задание
 from abc import ABC, abstractmethod
 import math
 
@@ -84,7 +87,6 @@ class Shape(ABC):
         pass
 
 
-# Класс-наследник: прямоугольник
 class Rectangle(Shape):
     def __init__(self, width, height):
         self.width = width
